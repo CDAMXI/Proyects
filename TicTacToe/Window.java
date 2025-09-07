@@ -14,44 +14,53 @@ public class Window {
     }
 
     public void display() {
-        JFrame frame = new JFrame(title);
-        frame.setSize(width, height);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setLayout(new BorderLayout()); // MUY IMPORTANTE
-        frame.setLocationRelativeTo(null);
+    JFrame frame = new JFrame(title);
+    frame.setSize(width, height);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setResizable(false);
+    frame.setLayout(new BorderLayout());
+    frame.setLocationRelativeTo(null);
 
-        // Create title bar
-        JPanel titleBar = new JPanel();
-        JLabel titleText = new JLabel(title);
-        titleText.setFont(new Font("Arial", Font.BOLD, 30));
-        titleText.setForeground(Color.WHITE);
-        titleBar.setBackground(Color.BLACK);
-        titleBar.add(titleText);
-        frame.add(titleBar, BorderLayout.NORTH);
+    // Title bar
+    JPanel titleBar = new JPanel();
+    JLabel titleText = new JLabel(title);
+    titleText.setFont(new Font("Arial", Font.BOLD, 30));
+    titleText.setForeground(Color.WHITE);
+    titleBar.setBackground(Color.BLACK);
+    titleBar.add(titleText);
+    frame.add(titleBar, BorderLayout.NORTH);
 
-        // Create game board
-        JPanel board = new JPanel(new GridLayout(3, 3));
-        board.setPreferredSize(new Dimension(width / 3, height / 3));
-        board.setBackground(Color.BLACK);
-        for (int i = 0; i < 9; i++) {
-            JButton cell = new JButton();
-            cell.setFont(new Font("Arial", Font.BOLD, 60));
-            board.add(cell);
-        }
-        frame.add(board, BorderLayout.CENTER);
+    // Current player
+    Random rand = new Random();
+    final int[] currentPlayer = {rand.nextInt(2)};
+    JPanel firstPlayer = new JPanel();
+    JLabel firstPlayerLabel = new JLabel("Current Player: " + players[currentPlayer[0]]);
+    firstPlayerLabel.setFont(new Font("Arial", Font.BOLD, 20));
+    firstPlayer.add(firstPlayerLabel);
+    frame.add(firstPlayer, BorderLayout.SOUTH);
 
-        // First player
-        Random rand = new Random();
-        int currentPlayer = rand.nextInt(2);
+    // Game board
+    JPanel board = new JPanel(new GridLayout(3, 3));
+    board.setBackground(Color.BLACK);
 
-        JPanel firstPlayer = new JPanel();
-        JLabel firstPlayerLabel = new JLabel("Current Player: " + players[currentPlayer]);
-        firstPlayerLabel.setFont(new Font("Arial", Font.BOLD, 20));
-        firstPlayer.add(firstPlayerLabel);
-        frame.add(firstPlayer, BorderLayout.SOUTH);
+    for (int i = 0; i < 9; i++) {
+        JButton cell = new JButton();
+        cell.setFont(new Font("Arial", Font.BOLD, 60));
 
-        frame.setVisible(true); // al final
+        cell.addActionListener(e -> {
+            cell.setText(players[currentPlayer[0]]);
+            cell.setEnabled(false);
+            currentPlayer[0] = (currentPlayer[0] + 1) % 2;
+            firstPlayerLabel.setText("Current Player: " + players[currentPlayer[0]]);
+        });
+
+        board.add(cell);
     }
+    frame.add(board, BorderLayout.CENTER);
+
+    // Hacer visible al final
+    frame.setVisible(true);
+}
+
 
 }
