@@ -34,11 +34,14 @@ public class Window {
         // --- Rules panel ---
         JTextArea rules = new JTextArea(
             """
-            Reglas del Tic Tac Toe:
-            1. El primer jugador coloca X, el segundo O.
-            2. Cada turno se coloca un s\u00edmbolo en una casilla vac\u00eda.
-            3. Gana el primer jugador que consiga 3 en l\u00ednea (horizontal, vertical o diagonal).
-            4. Si todas las casillas est\u00e1n llenas y nadie gana, es un empate.""");
+            Tic Tac Toe Rules:
+            1. The first player places X, the second player places O.
+            2. On each turn, a symbol is placed in an empty square.
+            3. The first player to get 3 in a row (horizontal, vertical, or diagonal) wins.
+            4. If all squares are filled and no one wins, the game is a draw.
+            Enjoy the game!
+            
+            """);
         rules.setEditable(false);
         rules.setFont(new Font("Arial", Font.PLAIN, 16));
         rules.setBackground(Color.BLACK);
