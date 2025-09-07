@@ -29,5 +29,25 @@ public class Window {
         titleText.setForeground(Color.WHITE);
         titleBar.setBackground(Color.BLACK);
         frame.getContentPane().setBackground(Color.BLACK);
+
+        // Center the window on the screen
+        frame.setLocationRelativeTo(null);
+
+        //Create game board
+        JPanel board = new JPanel();
+        board.setLayout(new GridLayout(3, 3)); // 3 rows, 3 columns
+        frame.add(board, BorderLayout.CENTER);
+        board.setPreferredSize(new Dimension(width / 3, height / 3)); // area for the board
+        board.setBackground(Color.BLACK);
+
+        // Create cells
+        for (int i = 0; i < 9; i++) {
+            JButton cell = new JButton();
+            cell.setFont(new Font("Arial", Font.BOLD, 60)); //Big size for X and O
+            board.add(cell);
+        }
+
+        frame.add(board);
+
     }
 }
