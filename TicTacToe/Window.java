@@ -1,53 +1,57 @@
 import java.awt.*;
+import java.util.*;
 import javax.swing.*;
 
 public class Window {
     int width, height;
     String title;
-    public Window(int width, int height, String title) {
+    String[] players;
+    public Window(int width, int height, String title, String[] players) {
         this.width = width;
         this.height = height;
         this.title = title;
+        this.players = players;
     }
 
     public void display() {
-        // Create the window
         JFrame frame = new JFrame(title);
         frame.setSize(width, height);
-        frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
+        frame.setLayout(new BorderLayout()); // MUY IMPORTANTE
+        frame.setLocationRelativeTo(null);
 
         // Create title bar
         JPanel titleBar = new JPanel();
         JLabel titleText = new JLabel(title);
         titleText.setFont(new Font("Arial", Font.BOLD, 30));
+        titleText.setForeground(Color.WHITE);
+        titleBar.setBackground(Color.BLACK);
         titleBar.add(titleText);
         frame.add(titleBar, BorderLayout.NORTH);
 
-        // Set colors
-        titleText.setForeground(Color.WHITE);
-        titleBar.setBackground(Color.BLACK);
-        frame.getContentPane().setBackground(Color.BLACK);
-
-        // Center the window on the screen
-        frame.setLocationRelativeTo(null);
-
-        //Create game board
-        JPanel board = new JPanel();
-        board.setLayout(new GridLayout(3, 3)); // 3 rows, 3 columns
-        frame.add(board, BorderLayout.CENTER);
-        board.setPreferredSize(new Dimension(width / 3, height / 3)); // area for the board
+        // Create game board
+        JPanel board = new JPanel(new GridLayout(3, 3));
+        board.setPreferredSize(new Dimension(width / 3, height / 3));
         board.setBackground(Color.BLACK);
-
-        // Create cells
         for (int i = 0; i < 9; i++) {
             JButton cell = new JButton();
-            cell.setFont(new Font("Arial", Font.BOLD, 60)); //Big size for X and O
+            cell.setFont(new Font("Arial", Font.BOLD, 60));
             board.add(cell);
         }
+        frame.add(board, BorderLayout.CENTER);
 
-        frame.add(board);
+        // First player
+        Random rand = new Random();
+        int currentPlayer = rand.nextInt(2);
 
+        JPanel firstPlayer = new JPanel();
+        JLabel firstPlayerLabel = new JLabel("Current Player: " + players[currentPlayer]);
+        firstPlayerLabel.setFont(new Font("Arial", Font.BOLD, 20));
+        firstPlayer.add(firstPlayerLabel);
+        frame.add(firstPlayer, BorderLayout.SOUTH);
+
+        frame.setVisible(true); // al final
     }
+
 }
