@@ -31,28 +31,6 @@ public class Window {
         titleBar.add(titleText);
         frame.add(titleBar, BorderLayout.NORTH);
 
-        // --- Rules panel ---
-        JTextArea rules = new JTextArea(
-            """
-            Tic Tac Toe Rules:
-            1. The first player places X, the second player places O.
-            2. On each turn, a symbol is placed in an empty square.
-            3. The first player to get 3 in a row (horizontal, vertical, or diagonal) wins.
-            4. If all squares are filled and no one wins, the game is a draw.
-            Enjoy the game!
-            
-            """);
-        rules.setEditable(false);
-        rules.setFont(new Font("Arial", Font.PLAIN, 16));
-        rules.setBackground(Color.BLACK);
-        rules.setForeground(Color.WHITE);
-        rules.setLineWrap(true);
-        rules.setWrapStyleWord(true);
-
-        JScrollPane scroll = new JScrollPane(rules);
-        scroll.setPreferredSize(new Dimension(250, height));
-        frame.add(scroll, BorderLayout.WEST);
-
         // --- Current player ---
         Random rand = new Random();
         final int[] currentPlayer = {rand.nextInt(2)};
