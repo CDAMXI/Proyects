@@ -54,7 +54,7 @@ public class Window {
         frame.add(firstPlayer, BorderLayout.SOUTH);
 
         // --- Board ---
-        Color boardColor = Color.decode("#F6F1E9");
+        Color boardColor = Color.decode("#4F200D");
         JPanel board = new JPanel(new GridLayout(3, 3));
         board.setBackground(boardColor);
         frame.add(board, BorderLayout.CENTER);
