@@ -4,4 +4,3 @@ public class test {
         window.display();
     }
 }
-    
