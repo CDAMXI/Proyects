@@ -19,7 +19,7 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 
 ---
 
-## ⚽ Others
+## 🌐 Others
 | Project | Description | Technologies |
 |----------|--------------|---------------|
 | [NextMatchRequest](./Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
