@@ -22,8 +22,8 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 ## 🌐 Others
 | Project | Description | Technologies |
 |----------|--------------|---------------|
-| [NextMatchRequest](./Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
 | [C-Playground](./C) | A playground for experimenting with C — from algorithms and recursion to system-level programming and process management. | C |
+| [NextMatchRequest](./Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
 
 ---
 
@@ -35,16 +35,16 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 ---
 
 ### 🚧 Currently Working On
-- Expanding the Harvard AI course projects (Search, Minesweeper, and more)  
-- Exploring new ideas in Python automation and data visualization  
-- Improving code readability and documentation across all projects  
+- Expanding the Harvard AI course projects (Search, Minesweeper, and more)
+- Exploring new ideas in Python automation and data visualization
+- Improving code readability and documentation across all projects
 - Adding new experiments and exercises to the **C-Playground**
 
 ---
 
 ### 📚 About This Repository
 This repository serves as a **personal lab** where I apply concepts from my degree in Computer Science and from independent learning platforms such as edX and Coursera.  
-Each project reflects my curiosity, problem-solving mindset, and passion for building clean, efficient, and functional software.
+Each project reflects my curiosity, problem-solving skills, and passion for building clean, efficient, and functional software.
 
 ---
 
