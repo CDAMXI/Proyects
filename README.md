@@ -22,7 +22,7 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 ## 🌐 Others
 | Project | Description | Technologies |
 |----------|--------------|---------------|
-| [C-Playground](./C) | A playground for experimenting with C — from algorithms and recursion to system-level programming and process management. | C |
+| [C-Playground](https://github.com/CDAMXI/Proyects/tree/main/Others/C-Playground) | A playground for experimenting with C — from algorithms and recursion to system-level programming and process management. | C |
 | [NextMatchRequest](./Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
 
 ---
