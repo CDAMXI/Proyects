@@ -7,7 +7,8 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 ## 🕹️ Games
 | Project | Description | Technologies |
 |----------|--------------|---------------|
-| [TicTacToe](./Games/TicTacToe) | Classic Tic-Tac-Toe with an unbeatable AI powered by the Minimax algorithm. | Python |
+| [GuessTheNumber](./Games/GuessTheNumber) | Classic Guess the number game with limited and unlimited attempts. | Java |
+| [TicTacToe](./Games/TicTacToe) | Classic Tic-Tac-Toe you can play with your friends. | Python |
 
 ---
 
