@@ -4,16 +4,6 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 
 ---
 
-## 📖 Table of Contents
-- [🕹️ Games](#🕹️-games)
-- [🧰 Tools](#🧰-tools)
-- [🌐 Others](#🌐-others)
-- [🎓 Courses](#🎓-courses)
-- [🚧 Currently Working On](#-currently-working-on)
-- [📚 About This Repository](#-about-this-repository)
-
----
-
 <details>
 <summary><b>🕹️ Games</b></summary>
 
