@@ -24,8 +24,8 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 | Project | Description | Technologies |
 |----------|--------------|---------------|
 | [C-Playground](https://github.com/CDAMXI/Proyects/tree/main/Others/C-Playground) | A playground for experimenting with C — from algorithms and recursion to system-level programming and process management. | C |
-| [NextMatchRequest](./Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
-| [Pattern](https://github.com/CDAMXI/Proyects/tree/main/Others/Patterns) | Given any positive int, it will output 9 patterns using '*'. | Python |
+| [NextMatchRequest]([./Football/NextMatchRequest](https://github.com/CDAMXI/Proyects/tree/main/Others/Football)) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
+| [Patterns](https://github.com/CDAMXI/Proyects/tree/main/Others/Patterns) | Given any positive int, it will output 9 patterns using '*'. | Python |
 
 ---
 
