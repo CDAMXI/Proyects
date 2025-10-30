@@ -4,35 +4,51 @@ Welcome to my collection of personal projects — a space where I explore ideas,
 
 ---
 
-## 🕹️ Games
+<details>
+<summary><b>🕹️ Games</b></summary>
+
 | Project | Description | Technologies |
 |----------|--------------|---------------|
 | [GuessTheNumber](https://github.com/CDAMXI/Proyects/tree/main/Games/GuessTheNumber) | Classic Guess the number game with limited and unlimited attempts. | Java |
 | [TicTacToe](https://github.com/CDAMXI/Proyects/tree/main/Games/TicTacToe) | Classic Tic-Tac-Toe you can play with your friends. | Python |
 
+</details>
+
 ---
 
-## 🧰 Tools
+<details>
+<summary><b>🧰 Tools</b></summary>
+
 | Project | Description | Technologies |
 |----------|--------------|---------------|
 | [CurrencyConverter](https://github.com/CDAMXI/Proyects/tree/main/Tools/CurrencyConverter) | Converts between world currencies using live exchange rates via public APIs. | Python |
 | [UnitConverter](https://github.com/CDAMXI/Proyects/tree/main/Tools/UnitConverter) | Converts between multiple measurement units such as length, weight, and temperature. | Python |
 
+</details>
+
 ---
 
-## 🌐 Others
+<details>
+<summary><b>🌐 Others</b></summary>
+
 | Project | Description | Technologies |
 |----------|--------------|---------------|
 | [C-Playground](https://github.com/CDAMXI/Proyects/tree/main/Others/C-Playground) | A playground for experimenting with C — from algorithms and recursion to system-level programming and process management. | C |
 | [NextMatchRequest](https://github.com/CDAMXI/Proyects/tree/main/Others/Football/NextMatchRequest) | Fetches upcoming matches for any team across the top 5 European leagues. | Python |
 | [Patterns](https://github.com/CDAMXI/Proyects/tree/main/Others/Patterns) | Given any positive int, it will output 9 patterns using '*'. | Python |
 
+</details>
+
 ---
 
-## 🎓 Courses
+<details>
+<summary><b>🎓 Courses</b></summary>
+
 | Course | Description | Status |
 |--------|--------------|--------|
 | [Harvard CS50: AI with Python](https://github.com/CDAMXI/Proyects/tree/main/Courses/Harvard_AI) | Implementing search algorithms, Minimax, and basic AI models in Python. | 🟢 In progress |
+
+</details>
 
 ---
 
