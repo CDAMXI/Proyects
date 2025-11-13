@@ -2,37 +2,35 @@ import java.util.Scanner;
 
 public class GuessTheNumber {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Welcome to Guess The Number!");
-        System.out.print("Enter the smallest number: ");
-        int min = sc.nextInt();
-
-        System.out.print("Enter the largest number: ");
-        int max = sc.nextInt();
-
-        int secretNumber = getRandomNumber(min, max);
-        int guess;
-        int attempts = 0;
-
-        System.out.println("I've picked a number between " + min + " and " + max + ". Try to guess it!");
-
-        do {
-            System.out.print("Your guess: ");
-            guess = sc.nextInt();
-            attempts++;
-
-            if (guess < secretNumber) {
-                System.out.println("Too low!");
-            } else if (guess > secretNumber) {
-                System.out.println("Too high!");
-            } else {
-                System.out.println("🎉 Correct! The number was " + secretNumber + ".");
-                System.out.println("You needed " + attempts + " attempts.");
-            }
-        } while (guess != secretNumber);
-
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Welcome to Guess The Number!");
+            System.out.print("Enter the smallest number: ");
+            int min = sc.nextInt();
+            
+            System.out.print("Enter the largest number: ");
+            int max = sc.nextInt();
+            
+            int secretNumber = getRandomNumber(min, max);
+            int guess;
+            int attempts = 0;
+            
+            System.out.println("I've picked a number between " + min + " and " + max + ". Try to guess it!");
+            
+            do {
+                System.out.print("Your guess: ");
+                guess = sc.nextInt();
+                attempts++;
+                
+                if (guess < secretNumber) {
+                    System.out.println("Too low!");
+                } else if (guess > secretNumber) {
+                    System.out.println("Too high!");
+                } else {
+                    System.out.println("🎉 Correct! The number was " + secretNumber + ".");
+                    System.out.println("You needed " + attempts + " attempts.");
+                }
+            } while (guess != secretNumber);
+        }
     }
 
     public static int getRandomNumber(int min, int max) {
