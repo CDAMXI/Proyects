@@ -72,44 +72,45 @@ public class Patterns {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int n = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number of rows: ");
+            int n = sc.nextInt();
 
-        System.out.println("Pattern 1:");
-        Pattern1(n);
-        System.out.println();
+            System.out.println("Pattern 1:");
+            Pattern1(n);
+            System.out.println();
 
-        System.out.println("Pattern 2:");
-        Pattern2(n);
-        System.out.println();
+            System.out.println("Pattern 2:");
+            Pattern2(n);
+            System.out.println();
 
-        System.out.println("Pattern 3:");
-        Pattern3(n);
-        System.out.println();
+            System.out.println("Pattern 3:");
+            Pattern3(n);
+            System.out.println();
 
-        System.out.println("Pattern 4:");
-        Pattern4(n);
-        System.out.println();
+            System.out.println("Pattern 4:");
+            Pattern4(n);
+            System.out.println();
 
-        System.out.println("Pattern 5:");
-        Pattern5(n);
-        System.out.println();
+            System.out.println("Pattern 5:");
+            Pattern5(n);
+            System.out.println();
 
-        System.out.println("Pattern 6:");
-        Pattern6(n);
-        System.out.println();
+            System.out.println("Pattern 6:");
+            Pattern6(n);
+            System.out.println();
 
-        System.out.println("Pattern 7:");
-        Pattern7(n);
-        System.out.println();
+            System.out.println("Pattern 7:");
+            Pattern7(n);
+            System.out.println();
 
-        System.out.println("Pattern 8:");
-        Pattern8(n);
-        System.out.println();
+            System.out.println("Pattern 8:");
+            Pattern8(n);
+            System.out.println();
 
-        System.out.println("Pattern 9:");
-        Pattern9(n);
+            System.out.println("Pattern 9:");
+            Pattern9(n);
+        }
     }
 }
 
