@@ -10,7 +10,7 @@ CREATE TABLE Grupo (
     cod_invitacion VARCHAR2(6 CHAR) NOT NULL UNIQUE,
     creador NUMBER(10) NOT NULL,
     torneo_id NUMBER(10) NOT NULL,
-    max_apuestas NUMBER(3) NOT NULL,
+    max_apuestas NUMBER(3) DEFAULT 1 NOT NULL,
     CONSTRAINT chk_max_apuestas CHECK (max_apuestas >= 1),
     CONSTRAINT fk_grupo_creador FOREIGN KEY (creador) REFERENCES Usuario(id),
     CONSTRAINT fk_grupo_torneo FOREIGN KEY (torneo_id) REFERENCES Torneo(id)
